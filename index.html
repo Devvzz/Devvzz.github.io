@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Devis Hila · IT student and developer</title>
+  <meta name="description" content="Devis Hila, IT student in Shkodër (HTL, database and network design). Projects: TasteAbroad, Pet Sanctuary Sim, network and web work." />
+  <meta property="og:title" content="Devis Hila · IT student and developer" />
+  <meta property="og:description" content="Networks, web apps and AI agents. TasteAbroad, Pet Sanctuary Sim and more." />
+  <meta property="og:image" content="https://devvzz.github.io/assets/tasteabroad-1-results-kyoto.jpg" />
+  <link rel="icon" href="assets/devis.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#">Devis<span>Hila</span></a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="photo" src="assets/devis.jpg" alt="Devis Hila" width="160" height="160" />
+      <div>
+        <p class="eyebrow">Shkodër, Albania · graduating 2027</p>
+        <h1>I build networks, web apps and AI agents.</h1>
+        <p class="lead">
+          I study database and network design at HTL Peter Mahringer. At school and in my internship I work
+          with Cisco, VLANs and Wi-Fi; in my own time I build apps. My latest, TasteAbroad, matches students
+          with university cities worldwide by their taste in music, food and film.
+        </p>
+        <p class="actions">
+          <a class="button" href="#projects">See my projects</a>
+          <a class="button ghost" href="mailto:hiladevis08@gmail.com">Email me</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project featured">
+        <div class="project-head">
+          <div>
+            <p class="eyebrow">Web app · Qloo Agentic Hackathon 2026</p>
+            <h3>TasteAbroad</h3>
+          </div>
+          <p class="links">
+            <a href="https://tasteabroad.vercel.app">Live demo</a>
+            <a href="https://github.com/Devvzz/tasteabroad">Code</a>
+            <a href="https://devpost.com/software/1511225">Devpost</a>
+          </p>
+        </div>
+        <p>
+          Students pick a city to study abroad from rankings and tuition, then find out the city doesn't fit
+          them. TasteAbroad asks a different question: will I feel at home there? You type what you love, an
+          AI agent (Gemini with function calling) asks Qloo's taste API to rank 105 university cities once
+          for each of your tastes, and you get your top matches with a score you can check: every card shows
+          where the city ranks for each taste. Universities, tuition, living costs, Erasmus+ and scholarship
+          links come with it.
+        </p>
+        <div class="video">
+          <iframe src="https://www.youtube-nocookie.com/embed/ok7XA0F1fVQ" title="TasteAbroad trailer" loading="lazy"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="shots">
+          <img src="assets/tasteabroad-1-results-kyoto.jpg" alt="Results: Kyoto first, with its rank for each taste" loading="lazy" />
+          <img src="assets/tasteabroad-2-taste-map.jpg" alt="Taste map of all 105 cities" loading="lazy" />
+          <img src="assets/tasteabroad-3-compare-places.jpg" alt="Two cities side by side, with places from Qloo" loading="lazy" />
+          <img src="assets/tasteabroad-4-like-check.jpg" alt="Each like is checked with Qloo as it is added" loading="lazy" />
+        </div>
+        <ul class="facts">
+          <li>Scores come only from Qloo's data; the AI picks the lookups and writes the notes.</li>
+          <li>Searches show cities in about 10 to 20 seconds, even when the free Gemini tier is slow: two models are asked at once and the first answer wins.</li>
+          <li>Next.js, TypeScript, Tailwind CSS, Qloo API, Gemini API, deployed on Vercel.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <div>
+            <p class="eyebrow">Roblox game · beta, since September 2026</p>
+            <h3>Pet Sanctuary Sim</h3>
+          </div>
+        </div>
+        <p>
+          A pet-collection game on Roblox that I designed and lead. I designed all 100+ pets, 11 eggs and 9
+          themed worlds, and the economy behind them, with rarity odds down to 1 in 5,000,000. I used AI coding
+          agents as my development team: I wrote the design specs, play-tested every build and directed 18
+          feature releases.
+        </p>
+        <ul class="facts">
+          <li>110+ scripts and 78 server-validated actions, with anti-cheat checks on every purchase and reward.</li>
+          <li>Saved progress with versioned DataStores, global and weekly leaderboards, and mail between servers.</li>
+          <li>Tested with 2,500+ deliberately invalid server calls, save and load audits, and layout checks on PC and mobile.</li>
+          <li>Luau, Roblox Studio.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <div>
+            <p class="eyebrow">Internship · UnionNet (Western Union "Dodona"), summer 2026</p>
+            <h3>Network and web setup for a business</h3>
+          </div>
+        </div>
+        <p>
+          In a 272-hour internship I set up most of the IT for a business, from cables to the website, and
+          then trained the staff to use it.
+        </p>
+        <ul class="facts">
+          <li>Wi-Fi with Ubiquiti UniFi: controller, main and guest networks on separate VLANs, coverage measured.</li>
+          <li>CCTV: Cat 6 cabling, RJ45 termination and tests, PoE switch, NVR and secure remote access.</li>
+          <li>Website for the "Dodona Brand": layout, product catalogue, responsive design, contact form.</li>
+          <li>TTLock smart locks with users, codes and schedules, plus a network plan and user manuals.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="skills" class="grid-2">
+      <div>
+        <h2>Skills</h2>
+        <h4>Networks</h4>
+        <p class="tags"><span>Cisco routing and switching</span><span>IP addressing and subnetting</span><span>VLANs</span><span>Ubiquiti UniFi</span><span>Wireshark</span><span>CCTV and PoE</span></p>
+        <h4>Development</h4>
+        <p class="tags"><span>TypeScript</span><span>React and Next.js</span><span>React Native</span><span>Java</span><span>SQL</span><span>PHP</span><span>HTML and CSS</span><span>Luau</span></p>
+        <h4>AI</h4>
+        <p class="tags"><span>LLM function calling</span><span>Gemini API</span><span>AI coding agents</span><span><a href="https://certificates.mooc.fi/validate/e0jcokpyh07">Elements of AI certificate</a></span></p>
+      </div>
+      <div>
+        <h2>Languages</h2>
+        <ul class="langs">
+          <li><span>Albanian</span><span>native</span></li>
+          <li><span>English</span><span>C2</span></li>
+          <li><span>German</span><span>C1</span></li>
+          <li><span>Italian</span><span>C1</span></li>
+          <li><span>French</span><span>A2</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience and education</h2>
+      <ol class="timeline">
+        <li><span class="when">2026</span><div><strong>IT intern</strong>, UnionNet (Western Union "Dodona"), Vau i Dejës<br />Networks, CCTV, Wi-Fi, website, staff training.</div></li>
+        <li><span class="when">2024</span><div><strong>Engineering assistant</strong>, Kostandin Group, Shkodër<br />Vehicle diagnostics and software updates on modern and electric vehicles.</div></li>
+        <li><span class="when">2024</span><div><strong>3rd place, YEA Finals</strong> business ideas competition<br />With FCO, a fitness app idea (React Native, TypeScript).</div></li>
+        <li><span class="when">2023</span><div><strong>Graphic designer</strong>, Art Dekor, Shkodër<br />Print and digital design, 3D printing.</div></li>
+        <li><span class="when">2019 to 2027</span><div><strong>HTL Peter Mahringer</strong>, Shkodër<br />Database and network design and administration (EQF level 5).</div></li>
+      </ol>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>I'm looking for an internship where I can work on modern, technology-driven projects. Get in touch:</p>
+      <p class="actions">
+        <a class="button" href="mailto:hiladevis08@gmail.com">hiladevis08@gmail.com</a>
+        <a class="button ghost" href="https://www.linkedin.com/in/devis-hila-15875a2a5/">LinkedIn</a>
+        <a class="button ghost" href="https://github.com/Devvzz">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>© 2026 Devis Hila</footer>
+</body>
+</html>
